@@ -1,0 +1,30 @@
+1)=> CREATE TABLE company;
+
+2)=> CREATE TABLE employee(id int PRIMARY KEY AUTO_INCREMENT);
+
+3)=> ALTER TABLE employee ADD COLUMN first_name Varchar(100);
+  => ALTER TABLE employee ADD COLUMN last_name Varchar(100);
+  => ALTER TABLE employee ADD COLUMN designation Varchar(100);
+  => ALTER TABLE employee ADD COLUMN hiredate DATe;
+  => ALTER TABLE employee ADD COLUMN salary int;
+  => ALTER TABLE employee ADD COLUMN comm Varchar(100);
+  => ALTER TABLE employee ADD COLUMN deptino int; 
+
+4)=> ALTER TABLE employee DROP empno;
+
+5)=> ALTER TABLE employee ADD empno int AFTER id;
+
+6)=> ALTER TABLE employee CHANGE deptino deptno ;
+
+7)=> INSERT INTO employee (empno,first_name,last_name,designation,hiredate,salary,comm,deptno)VALUES('1','raju','xyz','bussiness analyst','78-Nov-23','60000','-','40');
+  => INSERT INTO employee (empno,first_name,last_name,designation,hiredate,salary,comm,deptno)VALUES('202','syam','nick','technial architect','2023-06-8','60000','-','40');
+
+8)=> UPDATE employee SET empno = '201', last_name = 'rojes' WHERE employee .id = 1;
+
+9)=> UPDATE employee SET last_name = 'mick' WHERE employee .id = 4;
+
+10)=>INSERT INTO employee (empno,first_name,last_name,designation,hiredate,salary,comm,deptno)VALUES('204','james','madinson','manager','2022-06-8','33000','-','20');
+INSERT INTO employee (empno,first_name,last_name,designation,hiredate,salary,comm,deptno)VALUES('203','jones','nick','hr analyst','2021-08-9','32000','200','30');
+INSERT INTO employee (empno,first_name,last_name,designation,hiredate,salary,comm,deptno)VALUES('205','lucy','geller','hr associate','2021-08-9','30000','-','40');
+INSERT INTO employee (empno,first_name,last_name,designation,hiredate,salary,comm,deptno)VALUES('206','john','smith','cleark','2020-02-5','33000','100','40');
+INSERT INTO employee (empno,first_name,last_name,designation,hiredate,salary,comm,deptno)VALUES('207','nency','gillbert','sales manager','2020-02-5','55000','100','10');   
