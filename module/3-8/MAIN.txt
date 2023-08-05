@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import 'first.dart';
+import 'splash.dart';
+
+void main()
+{
+  runApp(MyApp());
+
+}
+
+class MyApp extends StatelessWidget
+{
+  @override
+  Widget build(BuildContext context)
+
+  {
+    FlutterNativeSplash.preserve()
+    return MaterialApp
+      (
+          home: Scaffold(
+            appBar: AppBar(
+              title: Text("singup"),
+            ),
+            body: Firstpage(),
+          ),
+            debugShowCheckedModeBanner: false,
+      );
+  }
+}
