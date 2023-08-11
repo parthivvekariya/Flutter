@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class SecondPage extends StatelessWidget
 {
   var total,amount,data;
-
+  //cons. get
   SecondPage({required this.total, required this.amount, required this.data});
 
   @override
