@@ -1,1 +1,26 @@
+login =>
+        https://roasting-conflict.000webhostapp.com/API/task/register_view.php
 
+Register =>
+          https://roasting-conflict.000webhostapp.com/API/task/register_insert.php
+
+category_images_view=>
+      https://roasting-conflict.000webhostapp.com/API/task/category/category_images_view.php
+
+category_delete =>
+      https://roasting-conflict.000webhostapp.com/API/task/category/category_delete.php
+
+category_images_delete=>
+      https://roasting-conflict.000webhostapp.com/API/task/Category_images/category_images_delete.php
+
+category_update=>
+      https://roasting-conflict.000webhostapp.com/API/task/category/category_update.php
+
+upload_category_main_image=>
+
+
+category_view =>
+   
+
+
+category_view =>
