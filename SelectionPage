@@ -1,0 +1,123 @@
+// import 'package:bistroboss/Auth/login.dart';
+// import 'package:bistroboss/Auth/register.dart';
+// import 'package:flutter/cupertino.dart';
+// import 'package:flutter/material.dart';
+//
+// class SelectionPage extends StatefulWidget {
+//   const SelectionPage({Key? key}) : super(key: key); // Fixing key usage
+//
+//   @override
+//   State<SelectionPage> createState() => _SelectionPageState();
+// }
+//
+// class _SelectionPageState extends State<SelectionPage> {
+//   final List<Item> items = [
+//     Item(name: 'waiter', imageUrl: 'assets/waiter.jpg'),
+//     Item(name: 'chef', imageUrl: 'assets/chef.jpeg'),
+//     Item(name: 'reception', imageUrl: 'assets/reception.jpeg'),
+//     Item(name: 'Add', imageUrl: 'assets/add.png'),
+//   ];
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: SizedBox(
+//         height: MediaQuery.of(context).size.height * 3, // Adjust this value as needed
+//         child: Center(
+//           child: Column(
+//             children: [
+//               SizedBox(height: 200,),
+//               Expanded(
+//                 child: GridView.builder(
+//                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+//                     crossAxisCount: 2,
+//                     crossAxisSpacing: 10.0,
+//                     mainAxisSpacing: 10.0,
+//                   ),
+//                   itemCount: items.length,
+//                   itemBuilder: (context, index) {
+//                     return GestureDetector(
+//                       onTap: () {
+//                         final loginIdentifier = items[index].name;
+//                             ScaffoldMessenger.of(context).showSnackBar(
+//                             SnackBar(
+//                               content: Text('$loginIdentifier selected'),
+//                             ),
+//                           );
+//
+//                             if(loginIdentifier == 'Add'){
+//                               Navigator.push(
+//                                 context,
+//                                 MaterialPageRoute(
+//                                   builder: (context) => Registration(),
+//                                 ),
+//                               );
+//                             }else{
+//                               Navigator.push(
+//                                 context,
+//                                 MaterialPageRoute(
+//                                   builder: (context) => Login(loginIdentifier: loginIdentifier),
+//                                 ),
+//                               );
+//                             }
+//                         // Navigator.push(
+//                         //   context,
+//                         //   MaterialPageRoute(
+//                         //     builder: (context) => Login(loginIdentifier: loginIdentifier),
+//                         //   ),
+//                         // );
+//                         },
+//                       child: Container(
+//                         width: 160,
+//                         height: 120,
+//                         decoration: BoxDecoration(
+//                           boxShadow: [
+//                             BoxShadow(
+//                               blurRadius: 4,
+//                               color: Colors.transparent,
+//                               offset: Offset(0, 2),
+//                             ),
+//                           ],
+//                           borderRadius: BorderRadius.circular(8),
+//                         ),
+//                         child: Column(
+//                           mainAxisAlignment: MainAxisAlignment.center,
+//                           children: <Widget>[
+//                             //Image.asset( items[index].imageUrl, height: 100),
+//                             ClipRRect(
+//                               borderRadius: BorderRadius.circular(50),
+//                               child: Image.asset(
+//                                 items[index].imageUrl,
+//                                 width: 100,
+//                                 height: 100,
+//                                 fit: BoxFit.cover,
+//                               ),
+//                             ),
+//                             Padding(
+//                               padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+//                               child: Text(
+//                                 items[index].name,
+//                               ),
+//                             ),
+//                             SizedBox(height: 5.0),
+//                           ],
+//                         ),
+//                       ),
+//                     );
+//                   },
+//                 ),
+//               ),
+//             ],
+//           )
+//         ),
+//       ),
+//     );
+//   }
+// }
+//
+// class Item {
+//   final String name;
+//   final String imageUrl;
+//
+//   Item({required this.name, required this.imageUrl});
+// }
